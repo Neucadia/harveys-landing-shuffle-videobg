@@ -1091,6 +1091,15 @@ video {
   transition-duration: 200ms;
 }
 
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 .hover\:border-gray-100:hover {
   --tw-border-opacity: 1;
   border-color: rgb(211 211 212 / var(--tw-border-opacity));
@@ -1175,4 +1184,3 @@ video {
     padding-bottom: 10rem;
   }
 }
-

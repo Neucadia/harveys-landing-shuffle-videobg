@@ -1,19 +1,56 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function IndexSectionHeaders1() {
+  useEffect(() => {
+    var promise = ref.current.play();
+
+    if (promise !== undefined) {
+      promise
+        .then((_) => {
+          // Autoplay started!
+        })
+        .catch((error) => {
+          // Autoplay was prevented.
+          // Show a "Play" button so that user can start playback.
+          console.log(error);
+        });
+    }
+  }, []);
   const [navOpen, setNavOpen] = React.useState(false);
+  const [isPlaying, setIsPlaying] = React.useState(false);
+  const ref = React.useRef(null);
+
+  const handleClick = () => {
+    const nextIsPlaying = !isPlaying;
+    setIsPlaying(nextIsPlaying);
+
+    if (nextIsPlaying) {
+      ref.current.play();
+    } else {
+      ref.current.pause();
+    }
+  };
+
   return (
     <React.Fragment>
       <>
         <section className="relative bg-gray-800 overflow-hidden ">
           {" "}
           <div className="absolute inset-0">
-            {" "}
-            <img
-              className="mx-auto h-full object-cover w-full"
-              src="https://static.shuffle.dev/uploads/files/cc/cce6580999c8067e23bb4a662dea535a74b463e5/Screen-Shot-2024-09-12-at-12-19-20-PM.jpg"
-              alt
-            />
+            <video
+              muted
+              autoPlay
+              loop
+              playsInline
+              poster="https://static.shuffle.dev/uploads/files/cc/cce6580999c8067e23bb4a662dea535a74b463e5/Screen-Shot-2024-09-12-at-12-19-20-PM.jpg"
+              id="bgvid"
+              ref={ref}
+              onPlay={() => setIsPlaying(true)}
+              onPause={() => setIsPlaying(false)}
+            >
+              <source src="bg.webm" type="video/webm" />
+              <source src="bg.mp4" type="video/mp4" />
+            </video>
           </div>{" "}
           <nav className="relative border-b border-gray-500">
             {" "}
@@ -91,25 +128,24 @@ export default function IndexSectionHeaders1() {
                 {" "}
                 <div className="flex justify-end">
                   {" "}
-                  <button className="inline-flex items-center justify-center w-28 h-28 text-white rounded-full border hover:border-gray-100 border-white">
+                  <button
+                    className="inline-flex items-center justify-center w-28 h-28 text-white rounded-full border hover:border-gray-100 border-white"
+                    onClick={handleClick}
+                  >
                     {" "}
                     <svg
-                      className="h-6 w-6"
-                      width={19}
-                      height={34}
-                      viewBox="0 0 19 34"
-                      fill="none"
                       xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-play h-6 w-6"
+                      viewBox="0 0 16 16"
                     >
-                      {" "}
-                      <path
-                        d="M9.35111 33.2228L0.834172 24.7059L1.89879 23.6413L9.13287 30.8753L9.12754 0.751973L10.6287 0.751974L10.634 30.8753L17.3357 24.1736L18.4004 25.2382L10.4157 33.2228C10.1217 33.5168 9.64512 33.5168 9.35111 33.2228Z"
-                        fill="currentColor"
-                      />{" "}
-                    </svg>{" "}
+                      <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+                    </svg>
                   </button>{" "}
                   <p className="hidden lg:block transform rotate-90 text-white">
-                    Scroll for more
+                    Press to play
                   </p>{" "}
                 </div>{" "}
               </div>{" "}
