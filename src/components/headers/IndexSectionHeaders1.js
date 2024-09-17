@@ -1,4 +1,200 @@
 import React, { useEffect } from "react";
+import { ReactNestedMenu } from "react-nested-menu";
+
+const menu = [
+  {
+    id: 1,
+    title: "Home",
+    url: "/",
+  },
+  {
+    id: 2,
+    title: "Store",
+    url: "/#",
+    children: [
+      {
+        id: 3,
+        title: "Men",
+        url: "/#",
+      },
+      {
+        id: 4,
+        title: "Women",
+        url: "/#",
+      },
+      {
+        id: 5,
+        title: "Kids",
+        url: "/#",
+      },
+      {
+        id: 6,
+        title: "Footwear",
+        url: "/#",
+      },
+      {
+        id: 7,
+        title: "Pet",
+        url: "/#",
+      },
+      {
+        id: 8,
+        title: "Brands",
+        url: "/#",
+      },
+      {
+        id: 9,
+        title: "Events",
+        url: "/#",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Seed",
+    url: "/#",
+    children: [
+      {
+        id: 3,
+        title: "Corn",
+        url: "/#",
+      },
+      {
+        id: 4,
+        title: "Soybeans",
+        url: "/#",
+      },
+      {
+        id: 5,
+        title: "Wheat",
+        url: "/#",
+      },
+      {
+        id: 6,
+        title: "Cover Crop",
+        url: "/#",
+      },
+      {
+        id: 7,
+        title: "Pasture Mix",
+        url: "/#",
+      },
+      {
+        id: 8,
+        title: "Food Plot",
+        url: "/#",
+      },
+    ],
+  },
+  {
+    title: "Feed",
+    url: "/#",
+    children: [
+      {
+        id: 3,
+        title: "Equine",
+        url: "/#",
+      },
+      {
+        id: 4,
+        title: "Swine",
+        url: "/#",
+      },
+      {
+        id: 5,
+        title: "Calf",
+        url: "/#",
+      },
+      {
+        id: 6,
+        title: "Sheep",
+        url: "/#",
+      },
+      {
+        id: 7,
+        title: "Goat",
+        url: "/#",
+      },
+      {
+        id: 8,
+        title: "Poultry",
+        url: "/#",
+      },
+      {
+        id: 9,
+        title: "Beef",
+        url: "/#",
+      },
+      {
+        id: 10,
+        title: "Dairy",
+        url: "/#",
+      },
+      {
+        id: 11,
+        title: "Pet",
+        url: "/#",
+      },
+      {
+        id: 12,
+        title: "Rabbit",
+        url: "/#",
+      },
+      {
+        id: 13,
+        title: "Lactation",
+        url: "/#",
+      },
+      {
+        id: 14,
+        title: "Full truckloads",
+        url: "/#",
+      },
+    ],
+  },
+  {
+    title: "Commodities",
+    url: "/#",
+    children: [
+      {
+        id: 8,
+        title: "About",
+        url: "/#",
+      },
+      {
+        id: 9,
+        title: "Products",
+        url: "/#",
+      },
+      {
+        id: 10,
+        title: "Team",
+        url: "/#",
+      },
+    ],
+  },
+  {
+    title: "Garden Center",
+    url: "/#",
+    children: [
+      {
+        id: 5,
+        title: "Hours (currently closed for the season)",
+        url: "/#",
+      },
+      {
+        id: 6,
+        title: "Fertilizer",
+        url: "/#",
+      },
+      {
+        id: 7,
+        title: "Soil",
+        url: "/#",
+      },
+    ],
+  },
+];
 
 export default function IndexSectionHeaders1() {
   useEffect(() => {
@@ -19,6 +215,17 @@ export default function IndexSectionHeaders1() {
   const [navOpen, setNavOpen] = React.useState(false);
   const [isPlaying, setIsPlaying] = React.useState(false);
   const ref = React.useRef(null);
+
+  const linkTransformer = (menuItem) => {
+    return (
+      <a
+        className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl"
+        href={menuItem.url}
+      >
+        {menuItem.title}
+      </a>
+    );
+  };
 
   const handleClick = () => {
     const nextIsPlaying = !isPlaying;
@@ -187,55 +394,19 @@ export default function IndexSectionHeaders1() {
               </div>{" "}
               <div>
                 {" "}
-                <ul>
-                  {" "}
-                  <li className="mb-1 px-10">
-                    <a
-                      className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl"
-                      href="#"
-                    >
-                      Store
-                    </a>
-                  </li>{" "}
-                  <li className="mb-1 px-10">
-                    <a
-                      className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl"
-                      href="#"
-                    >
-                      Commodities
-                    </a>
-                  </li>{" "}
-                  <li className="mb-1 px-10">
-                    <a
-                      className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl"
-                      href="#"
-                    >
-                      Feed
-                    </a>
-                  </li>{" "}
-                  <li className="mb-1 px-10">
-                    <a
-                      className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl"
-                      href="#"
-                    >
-                      Seed
-                    </a>
-                  </li>{" "}
-                  <li className="mb-1 px-10">
-                    <a
-                      className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl"
-                      href="#"
-                    >
-                      Garden Center
-                    </a>
-                  </li>{" "}
-                </ul>{" "}
+                <ReactNestedMenu
+                  navParentClassname="nested"
+                  navTopLevelParentClassname="vertical menu"
+                  navChildClassname="ml-8"
+                  linkTransformer={linkTransformer}
+                  menuData={menu}
+                />
               </div>{" "}
               <div className="mt-auto px-10">
                 {" "}
                 <p className="mt-6 mb-4 text-lg text-center">
                   {" "}
-                  <span>2021 © Zospace. All rights reserved.</span>{" "}
+                  <span>2024 © Neucadia. All rights reserved.</span>{" "}
                 </p>{" "}
               </div>{" "}
             </nav>

@@ -35,3 +35,7 @@ video::-webkit-media-controls {
   opacity: 0 !important;
   -webkit-appearance: none;
 }
+
+.vertical > li > a {
+  font-weight: 700;
+}
