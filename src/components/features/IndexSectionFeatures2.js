@@ -8,12 +8,12 @@ export default function IndexSectionFeatures2() {
           <img
             className="hidden lg:block absolute top-0 left-0 -ml-96 -mt-40"
             src="zospace-assets/lines/circle.svg"
-            alt
+            alt="Circle"
           />
           <img
             className="hidden lg:block absolute bottom-0 right-0 -mr-32 -mb-72"
             src="zospace-assets/lines/circle.svg"
-            alt
+            alt="Circle"
           />
           <div className="relative container px-4 mx-auto">
             <div>

@@ -291,13 +291,13 @@ export default function IndexSectionHeaders1() {
                 </button>{" "}
               </div>{" "}
               <div className="ml-8">
-                {" "}
+                {/* eslint-disable-next-line */}
                 <a className="text-2xl text-white font-bold" href="#">
                   {" "}
                   <img
                     className="h-11"
                     src="https://static.shuffle.dev/uploads/files/cc/cce6580999c8067e23bb4a662dea535a74b463e5/logo.png"
-                    alt
+                    alt="Harvey's"
                     width="auto"
                   />{" "}
                 </a>{" "}
@@ -307,6 +307,7 @@ export default function IndexSectionHeaders1() {
           <div className="relative container px-4 pt-24 md:pt-40 pb-32 mx-auto">
             {" "}
             <div className="absolute bottom-0 right-0 mb-12 2xl:mb-32 text-center w-full lg:w-auto">
+              {/* eslint-disable-next-line */}
               <a
                 className="text-lg text-white font-bold pb-2 border-b border-gray-500"
                 href="#"
@@ -323,7 +324,8 @@ export default function IndexSectionHeaders1() {
                 </span>{" "}
                 <h2 className="mt-8 mb-12 lg:mb-16 text-6xl text-white font-bold font-heading md:text-7xl">
                   A family of agriculture-focused comapnies
-                </h2>{" "}
+                </h2>
+                {/* eslint-disable-next-line */}
                 <a
                   className="inline-block px-12 py-5 text-lg text-white font-bold rounded-full transition duration-200 bg-green-700 hover:bg-green-800"
                   href="#"
@@ -378,7 +380,7 @@ export default function IndexSectionHeaders1() {
             <nav className="relative flex flex-col py-8 h-full w-full bg-white overflow-y-auto">
               {" "}
               <div className="flex items-center mb-16 pr-6">
-                {" "}
+                {/* eslint-disable-next-line */}
                 <a
                   className="ml-10 mr-auto text-2xl text-gray-800 font-bold"
                   href="#"
@@ -387,7 +389,7 @@ export default function IndexSectionHeaders1() {
                   <img
                     className="h-11"
                     src="https://static.shuffle.dev/uploads/files/cc/cce6580999c8067e23bb4a662dea535a74b463e5/script-green.png"
-                    alt
+                    alt="Harvey's"
                     width="auto"
                   />{" "}
                 </a>{" "}
