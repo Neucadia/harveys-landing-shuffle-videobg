@@ -296,7 +296,7 @@ export default function IndexSectionHeaders1() {
                   {" "}
                   <img
                     className="h-11"
-                    src="https://static.shuffle.dev/uploads/files/cc/cce6580999c8067e23bb4a662dea535a74b463e5/logo.png"
+                    src="/zospace-assets/logos/harveys-script-white.svg"
                     alt="Harvey's"
                     width="auto"
                   />{" "}
@@ -388,7 +388,7 @@ export default function IndexSectionHeaders1() {
                   {" "}
                   <img
                     className="h-11"
-                    src="https://static.shuffle.dev/uploads/files/cc/cce6580999c8067e23bb4a662dea535a74b463e5/script-green.png"
+                    src="/zospace-assets/logos/harveys-script-green.svg"
                     alt="Harvey's"
                     width="auto"
                   />{" "}
