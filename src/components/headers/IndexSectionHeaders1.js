@@ -312,7 +312,7 @@ export default function IndexSectionHeaders1() {
                 className="text-lg text-white font-bold pb-2 border-b border-gray-500"
                 href="#"
               >
-                Campaing summer collection.
+                Carson City, MI
               </a>
             </div>{" "}
             <div className="flex flex-wrap items-center -mx-4 mb-12 md:mb-24">
