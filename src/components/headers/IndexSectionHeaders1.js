@@ -196,6 +196,24 @@ const menu = [
   },
 ];
 
+const logos = [
+  {
+    url: "zospace-assets/logos/harveys-tiller-white.svg",
+  },
+  {
+    url: "zospace-assets/logos/harveys-script-white.svg",
+  },
+];
+
+const logosDark = [
+  {
+    url: "zospace-assets/logos/harveys-tiller-green.svg",
+  },
+  {
+    url: "zospace-assets/logos/harveys-script-green.svg",
+  },
+];
+
 export default function IndexSectionHeaders1() {
   useEffect(() => {
     var promise = ref.current.play();
@@ -214,6 +232,8 @@ export default function IndexSectionHeaders1() {
   }, []);
   const [navOpen, setNavOpen] = React.useState(false);
   const [isPlaying, setIsPlaying] = React.useState(false);
+  const [logoURL, setLogoURL] = React.useState(logos[0].url);
+  const [logoURLDark, setLogoURLDark] = React.useState(logosDark[0].url);
   const ref = React.useRef(null);
 
   const linkTransformer = (menuItem) => {
@@ -292,11 +312,19 @@ export default function IndexSectionHeaders1() {
               </div>{" "}
               <div className="ml-8">
                 {/* eslint-disable-next-line */}
-                <a className="text-2xl text-white font-bold" href="#">
+                <a
+                  className="text-2xl text-white font-bold"
+                  href="#"
+                  onClick={() =>
+                    setLogoURL(
+                      logos[logos.findIndex((logo) => logo.url !== logoURL)].url
+                    )
+                  }
+                >
                   {" "}
                   <img
                     className="h-11"
-                    src="/zospace-assets/logos/harveys-script-white.svg"
+                    src={logoURL}
                     alt="Harvey's"
                     width="auto"
                   />{" "}
@@ -384,11 +412,18 @@ export default function IndexSectionHeaders1() {
                 <a
                   className="ml-10 mr-auto text-2xl text-gray-800 font-bold"
                   href="#"
+                  onClick={() =>
+                    setLogoURLDark(
+                      logosDark[
+                        logosDark.findIndex((logo) => logo.url !== logoURLDark)
+                      ].url
+                    )
+                  }
                 >
                   {" "}
                   <img
                     className="h-11"
-                    src="/zospace-assets/logos/harveys-script-green.svg"
+                    src={logoURLDark}
                     alt="Harvey's"
                     width="auto"
                   />{" "}
