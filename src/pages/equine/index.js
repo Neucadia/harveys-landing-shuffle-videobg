@@ -418,7 +418,7 @@ export default function EquineList() {
           <img
             className="hidden lg:block absolute z-10 top-0 left-0 w-2/6 h-full object-cover"
             src="https://images.unsplash.com/photo-1514861889637-9f51bc99fc19?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzIzMzB8MHwxfHNlYXJjaHw2NHx8aG9yc2UlMjBmZWVkfGVufDB8fHx8MTcyODMyOTA5Nnww&ixlib=rb-4.0.3&q=85&w=1920"
-            alt
+            alt="Equine feed"
           />
           <div className="relative w-full lg:w-4/6 ml-auto pl-4 lg:pl-24 pr-4 pt-20">
             <div className="mb-20">
