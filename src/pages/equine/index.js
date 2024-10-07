@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { ReactNestedMenu } from "react-nested-menu";
 
 const menu = [
@@ -214,32 +214,88 @@ const logosDark = [
   },
 ];
 
-export default function IndexSectionHeaders1() {
-  useEffect(() => {
-    var promise = ref.current.play();
+const feed = [
+  {
+    id: 1,
+    title: "Harvey's Horse 10%",
+    protein: "10%",
+    weight: "50 lbs",
+    slug: "/harveys-horse-10",
+  },
+  {
+    id: 2,
+    title: "Buckeye - Supreme 14",
+    protein: "14%",
+    weight: "40 lbs",
+    slug: "#",
+  },
+  {
+    id: 3,
+    title: "Buckeye - Safe 'N Easy Senior Pelleted",
+    protein: "14%",
+    weight: "40 lbs",
+    slug: "#",
+  },
+  {
+    id: 4,
+    title: "Buckeye - Safe 'N Easy Complete",
+    protein: "12%",
+    weight: "50 lbs",
+    slug: "#",
+  },
+  {
+    id: 5,
+    title: "Buckeye - Ultimate Finish 25",
+    protein: "12%",
+    weight: "40 lbs",
+    slug: "#",
+  },
+  {
+    id: 6,
+    title: "Buckeye - Gro 'N Win",
+    protein: "32%",
+    weight: "50 lbs",
+    slug: "#",
+  },
+  {
+    id: 7,
+    title: "Buckeye - EQ8 Gut Health",
+    protein: "12%",
+    weight: "50 lbs",
+    slug: "#",
+  },
+  {
+    id: 8,
+    title: "Buckeye - Apple Snap Treats",
+    protein: "12%",
+    weight: "4 lbs",
+    slug: "#",
+  },
+  {
+    id: 9,
+    title: "Buckeye - Carrot Crunchers Treats",
+    protein: "12%",
+    weight: "4 lbs",
+    slug: "#",
+  },
+  {
+    id: 10,
+    title: "Buckeye - Peppermint Bits Treats",
+    protein: "12%",
+    weight: "4 lbs",
+    slug: "#",
+  },
+];
 
-    if (promise !== undefined) {
-      promise
-        .then((_) => {
-          // Autoplay started!
-        })
-        .catch((error) => {
-          // Autoplay was prevented.
-          // Show a "Play" button so that user can start playback.
-          console.log(error);
-        });
-    }
-  }, []);
+export default function EquineList() {
   const [navOpen, setNavOpen] = React.useState(false);
-  const [isPlaying, setIsPlaying] = React.useState(false);
   const [logoURL, setLogoURL] = React.useState(logos[0].url);
   const [logoURLDark, setLogoURLDark] = React.useState(logosDark[0].url);
-  const ref = React.useRef(null);
 
   const linkTransformer = (menuItem) => {
     return (
       <a
-        className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl"
+        className="block pl-8 py-4 text-xl text-gray-800 hover:bg-green-50 rounded-xl"
         href={menuItem.url}
       >
         {menuItem.title}
@@ -247,43 +303,15 @@ export default function IndexSectionHeaders1() {
     );
   };
 
-  const handleClick = () => {
-    const nextIsPlaying = !isPlaying;
-    setIsPlaying(nextIsPlaying);
-
-    if (nextIsPlaying) {
-      ref.current.play();
-    } else {
-      ref.current.pause();
-    }
-  };
-
   return (
     <React.Fragment>
       <>
-        <section className="relative bg-gray-800 overflow-hidden ">
-          {" "}
-          <div className="absolute inset-0">
-            <video
-              muted
-              autoPlay
-              loop
-              playsInline
-              poster="https://static.shuffle.dev/uploads/files/cc/cce6580999c8067e23bb4a662dea535a74b463e5/Screen-Shot-2024-09-12-at-12-19-20-PM.jpg"
-              id="bgvid"
-              ref={ref}
-              onPlay={() => setIsPlaying(true)}
-              onPause={() => setIsPlaying(false)}
-            >
-              <source src="bg.webm" type="video/webm" />
-              <source src="bg.mp4" type="video/mp4" />
-            </video>
-          </div>{" "}
-          <nav className="relative border-b border-gray-500">
+        <section className="relative bg-green-800 overflow-hidden ">
+          <nav className="relative border-b border-green-900">
             {" "}
             <div className="flex items-center px-4 lg:px-8 bg-gray-900 bg-opacity-25">
               {" "}
-              <div className="h-full py-8 pr-4 lg:pr-8 border-r border-white">
+              <div className="h-full py-8 pr-4 lg:pr-8 border-r border-green">
                 {" "}
                 <button
                   className="p-4"
@@ -332,69 +360,6 @@ export default function IndexSectionHeaders1() {
               </div>{" "}
             </div>
           </nav>{" "}
-          <div className="relative container px-4 pt-24 md:pt-40 pb-32 mx-auto">
-            {" "}
-            <div className="absolute bottom-0 right-0 mb-12 2xl:mb-32 text-center w-full lg:w-auto">
-              {/* eslint-disable-next-line */}
-              <a
-                className="text-lg text-white font-bold pb-2 border-b border-gray-500"
-                href="#"
-              >
-                Carson City, MI
-              </a>
-            </div>{" "}
-            <div className="flex flex-wrap items-center -mx-4 mb-12 md:mb-24">
-              {" "}
-              <div className="w-full lg:w-1/3 px-4 mb-20 lg:mb-0">
-                {" "}
-                <span className="text-lg lg:text-2xl font-bold text-white">
-                  Welcome to Harvey's
-                </span>{" "}
-                <h2 className="mt-8 mb-12 lg:mb-16 text-6xl text-white font-bold font-heading md:text-7xl">
-                  A family of agriculture-focused comapnies
-                </h2>
-                {/* eslint-disable-next-line */}
-                <a
-                  className="inline-block px-12 py-5 text-lg text-white font-bold rounded-full transition duration-200 bg-green-700 hover:bg-green-800"
-                  href="#"
-                >
-                  Contact us
-                </a>{" "}
-              </div>{" "}
-              <div className="hidden lg:block lg:w-2/3 px-4">
-                {" "}
-                <div className="flex justify-end">
-                  {" "}
-                  <button
-                    className="inline-flex items-center justify-center w-28 h-28 text-white rounded-full border hover:border-gray-100 border-white"
-                    onClick={handleClick}
-                  >
-                    {" "}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-play h-6 w-6"
-                      viewBox="0 0 16 16"
-                    >
-                      <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
-                    </svg>
-                  </button>{" "}
-                  <p className="hidden lg:block transform rotate-90 text-white">
-                    Press to play
-                  </p>{" "}
-                </div>{" "}
-              </div>{" "}
-              <div className="hidden lg:block w-full px-4 mt-16">
-                {" "}
-                <div className="relative max-w-sm mx-auto h-1 bg-black">
-                  {" "}
-                  <div className="absolute left-0 top-0 h-full w-1/2 bg-white" />{" "}
-                </div>{" "}
-              </div>{" "}
-            </div>{" "}
-          </div>{" "}
           <div
             className={`fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50 ${
               navOpen ? `block` : `hidden`
@@ -447,6 +412,58 @@ export default function IndexSectionHeaders1() {
                 </p>{" "}
               </div>{" "}
             </nav>
+          </div>
+        </section>
+        <section className="relative pb-20 2xl:py-40 bg-white overflow-hidden">
+          <img
+            className="hidden lg:block absolute z-10 top-0 left-0 w-2/6 h-full object-cover"
+            src="https://images.unsplash.com/photo-1514861889637-9f51bc99fc19?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzIzMzB8MHwxfHNlYXJjaHw2NHx8aG9yc2UlMjBmZWVkfGVufDB8fHx8MTcyODMyOTA5Nnww&ixlib=rb-4.0.3&q=85&w=1920"
+            alt
+          />
+          <div className="relative w-full lg:w-4/6 ml-auto pl-4 lg:pl-24 pr-4 pt-20">
+            <div className="mb-20">
+              <span className="text-lg font-bold text-green-700">
+                Harvey's Feed
+              </span>
+              <h2 className="mt-8 text-7xl font-bold font-heading">Equine</h2>
+            </div>
+            <div className="max-w-4xl">
+              <ul>
+                {feed.map((item) => (
+                  <li className="mb-4 px-4 lg:px-12 py-8 border-b border-gray-50">
+                    <button className="flex w-full text-left">
+                      <div className="w-auto mr-8">
+                        <span className="flex items-center justify-center w-12 h-12 bg-green-100 text-lg font-bold rounded-full">
+                          {item.protein}
+                        </span>
+                      </div>
+                      <div className="w-full mt-3">
+                        <div className="flex items-center justify-between">
+                          <h3 className="text-xl font-bold">{item.title}</h3>
+                          <span className="ml-4">
+                            <span className="inline-block transform">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width={16}
+                                height={16}
+                                fill="currentColor"
+                                className="w-4 h-4"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  fillRule="evenodd"
+                                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                                />
+                              </svg>
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </section>
       </>
