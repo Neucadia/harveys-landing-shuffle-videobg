@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Crude Protein",
+    "qualifier": "Min",
+    "value": 14.0,
+    "unit": "%"
+  },
+  {
+    "name": "Lysine",
+    "qualifier": "Min",
+    "value": 0.8,
+    "unit": "%"
+  },
+  {
+    "name": "Methionine",
+    "qualifier": "Min",
+    "value": 0.25,
+    "unit": "%"
+  },
+  {
+    "name": "Threonine",
+    "qualifier": "Min",
+    "value": 0.5,
+    "unit": "%"
+  },
+  {
+    "name": "Crude Fat",
+    "qualifier": "Min",
+    "value": 6.0,
+    "unit": "%"
+  },
+  {
+    "name": "Crude Fiber",
+    "qualifier": "Max",
+    "value": 8.5,
+    "unit": "%"
+  },
+  {
+    "name": "Acid Detergent Fiber",
+    "qualifier": "Max",
+    "value": 12.5,
+    "unit": "%"
+  },
+  {
+    "name": "Neutral Detergent Fiber",
+    "qualifier": "Max",
+    "value": 26.5,
+    "unit": "%"
+  },
+  {
+    "name": "Starch",
+    "qualifier": "Max",
+    "value": 24.5,
+    "unit": "%",
+    "note": "*"
+  },
+  {
+    "name": "Sugar",
+    "qualifier": "Max",
+    "value": 5.0,
+    "unit": "%",
+    "note": "*"
+  },
+  {
+    "name": "Calcium",
+    "qualifier": "Min",
+    "value": 0.9,
+    "unit": "%"
+  },
+  {
+    "name": "Calcium",
+    "qualifier": "Max",
+    "value": 1.4,
+    "unit": "%"
+  },
+  {
+    "name": "Phosphorus",
+    "qualifier": "Min",
+    "value": 0.5,
+    "unit": "%"
+  },
+  {
+    "name": "Potassium",
+    "qualifier": "Min",
+    "value": 0.9,
+    "unit": "%"
+  },
+  {
+    "name": "Copper",
+    "qualifier": "Min",
+    "value": 55,
+    "unit": "ppm"
+  },
+  {
+    "name": "Zinc",
+    "qualifier": "Min",
+    "value": 225,
+    "unit": "ppm"
+  },
+  {
+    "name": "Selenium",
+    "qualifier": "Min",
+    "value": 0.6,
+    "unit": "ppm"
+  },
+  {
+    "name": "Vitamin A",
+    "qualifier": "Min",
+    "value": 7000,
+    "unit": "IU/lb"
+  },
+  {
+    "name": "Vitamin D",
+    "qualifier": "Min",
+    "value": 700,
+    "unit": "IU/lb"
+  },
+  {
+    "name": "Vitamin E",
+    "qualifier": "Min",
+    "value": 200,
+    "unit": "IU/lb"
+  },
+  {
+    "name": "Omega-6 Fatty Acids",
+    "qualifier": "Min",
+    "value": 3.0,
+    "unit": "%"
+  },
+  {
+    "name": "Omega-3 Fatty Acids",
+    "qualifier": "Min",
+    "value": 0.3,
+    "unit": "%"
+  },
+  {
+    "name": "Saccharomyces cerevisiae",
+    "qualifier": "Min",
+    "value": 635000000,
+    "unit": "CFU/lb"
+  }
+]
