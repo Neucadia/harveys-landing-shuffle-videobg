@@ -431,7 +431,8 @@ export default function EquineList() {
               <ul>
                 {feed.map((item) => (
                   <li className="mb-4 px-4 lg:px-12 py-8 border-b border-gray-50">
-                    <button className="flex w-full text-left">
+                    {/* eslint-disable-next-line */}
+                    <a className="flex w-full text-left" href={item.slug}>
                       <div className="w-auto mr-8">
                         <span className="flex items-center justify-center w-12 h-12 bg-green-100 text-lg font-bold rounded-full">
                           {item.protein}
@@ -459,7 +460,7 @@ export default function EquineList() {
                           </span>
                         </div>
                       </div>
-                    </button>
+                    </a>
                   </li>
                 ))}
               </ul>
