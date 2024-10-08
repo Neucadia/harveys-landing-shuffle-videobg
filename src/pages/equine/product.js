@@ -376,14 +376,14 @@ export default function ProductPage() {
                   <img
                     className="object-cover w-full lg:w-112 h-160"
                     src="/zospace-assets/images/product.png"
-                    alt
+                    alt="Harvey's Horse 10"
                   />
                   <div className="absolute bottom-0 left-0 w-full px-12"></div>
                 </div>
                 <img
                   className="hidden lg:block absolute top-0 right-0 mt-52 xl:mt-0 -mr-40 xl:mr-0 hue-rotate-205"
                   src="zospace-assets/images/blue-eclipse.png"
-                  alt
+                  alt="Blue Eclipse"
                 />
               </div>
               <div className="w-full lg:w-1/2 px-10">
