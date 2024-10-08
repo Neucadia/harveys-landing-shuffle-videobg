@@ -564,5 +564,5 @@ module.exports = {
     "./src/pages/*/*.js",
     "./src/components/*/*.js",
   ],
-  plugins: [],
+  plugins: [{ "postcss-import": {}, tailwindcss: {}, autoprefixer: {} }],
 };
