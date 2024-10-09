@@ -345,13 +345,13 @@ export default function ProductPage() {
         <section className="pt-20 2xl:pt-40 pb-40 2xl:pb-80 overflow-hidden">
           <div className="container px-4 mx-auto">
             <div className="max-w-xl mx-auto mb-16 lg:mb-28 text-center">
-              <span className="text-lg font-bold text-green-800">
+              <span className="tiller-medium text-lg font-bold text-green-800">
                 Harvey's Feed
               </span>
-              <h2 className="mt-6 mb-12 text-6xl font-bold font-heading">
+              <h2 className="tiller-bold mt-6 mb-12 text-6xl font-bold font-heading">
                 Harvey's Horse 10
               </h2>
-              <p className="text-lg text-gray-500">
+              <p className="tiller-italic text-lg text-gray-500">
                 Complete feed for all life stages
               </p>
               <p className="mt-6 mb-6 text-gray-400">
@@ -412,7 +412,7 @@ export default function ProductPage() {
                         </span>
                       </div>
                       <div className="max-w-xs">
-                        <h3 className="text-lg font-bold font-heading text-gray-400">
+                        <h3 className="tiller-bold text-lg font-bold font-heading text-gray-400">
                           Equine-specific formula
                         </h3>
                       </div>
@@ -432,7 +432,7 @@ export default function ProductPage() {
                         </span>
                       </div>
                       <div className="max-w-xs">
-                        <h3 className="text-lg font-bold font-heading text-gray-400">
+                        <h3 className="tiller-bold text-lg font-bold font-heading text-gray-400">
                           100% traceable, pure ingredients
                         </h3>
                       </div>
@@ -461,7 +461,7 @@ export default function ProductPage() {
                         </span>
                       </div>
                       <div className="max-w-xs">
-                        <h3 className="text-lg font-bold font-heading text-gray-500">
+                        <h3 className="tiller-bold text-lg font-bold font-heading text-gray-400">
                           100% med-free facility
                         </h3>
                       </div>
@@ -471,7 +471,7 @@ export default function ProductPage() {
               </div>
             </div>
             <div className="px-10 mx-auto mt-12">
-              <h6 className="mt-6 mb-2 text-base leading-tight font-bold font-heading text-gray-500">
+              <h6 className="tiller-bold mt-6 mb-2 text-base leading-tight font-bold font-heading text-gray-500">
                 Ingredients
               </h6>
               <p className="mb-6 text-base text-gray-400 text-left">
@@ -490,10 +490,10 @@ export default function ProductPage() {
           <section className="relative py-20 2xl:py-40">
             <div className="container px-4 pb-20 mx-auto border-b border-gray-100">
               <div className="mb-14 text-center">
-                <span className="text-lg text-green-800 font-bold">
+                <span className="tiller-medium text-lg text-green-800 font-bold">
                   Equine Feed
                 </span>
-                <h2 className="mt-8 text-5xl font-bold font-heading">
+                <h2 className="tiller-demi mt-8 text-5xl font-bold font-heading">
                   Guaranteed Analysis
                 </h2>
               </div>

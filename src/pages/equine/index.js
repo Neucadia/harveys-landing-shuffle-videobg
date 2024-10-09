@@ -422,10 +422,12 @@ export default function EquineList() {
           />
           <div className="relative w-full lg:w-4/6 ml-auto pl-4 lg:pl-24 pr-4 pt-20">
             <div className="mb-20">
-              <span className="text-lg font-bold text-green-700">
+              <span className="tiller-demi text-lg font-bold text-green-700">
                 Harvey's Feed
               </span>
-              <h2 className="mt-8 text-7xl font-bold font-heading">Equine</h2>
+              <h2 className="tiller-bold mt-8 text-7xl font-bold font-heading">
+                Equine
+              </h2>
             </div>
             <div className="max-w-4xl">
               <ul>
@@ -434,13 +436,15 @@ export default function EquineList() {
                     {/* eslint-disable-next-line */}
                     <a className="flex w-full text-left" href={item.slug}>
                       <div className="w-auto mr-8">
-                        <span className="flex items-center justify-center w-12 h-12 bg-green-100 text-lg font-bold rounded-full">
+                        <span className="tiller-bold flex items-center justify-center w-12 h-12 bg-green-100 text-lg font-bold rounded-full">
                           {item.protein}
                         </span>
                       </div>
                       <div className="w-full mt-3">
                         <div className="flex items-center justify-between">
-                          <h3 className="text-xl font-bold">{item.title}</h3>
+                          <h3 className="tiller-demi text-xl font-bold">
+                            {item.title}
+                          </h3>
                           <span className="ml-4">
                             <span className="inline-block transform">
                               <svg
