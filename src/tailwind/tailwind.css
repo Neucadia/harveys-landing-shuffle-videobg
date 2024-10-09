@@ -4,6 +4,67 @@
 
 @tailwind utilities;
 
+.alkaline-regular {
+  font-family: "alkaline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.alkaline-bold {
+  font-family: "alkaline", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.tiller-regular {
+  font-family: "tiller", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.tiller-italic {
+  font-family: "tiller", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.tiller-medium {
+  font-family: "tiller", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.tiller-medium-italic {
+  font-family: "tiller", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+.tiller-demi {
+  font-family: "tiller", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.tiller-demi-italic {
+  font-family: "tiller", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+.tiller-bold {
+  font-family: "tiller", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.tiller-bold-italic {
+  font-family: "tiller", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.tiller-heavy {
+  font-family: "tiller", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.tiller-heavy-italic {
+  font-family: "tiller", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
 video {
   object-fit: cover;
   width: 100vw;

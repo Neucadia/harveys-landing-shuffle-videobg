@@ -347,10 +347,10 @@ export default function IndexSectionHeaders1() {
               {" "}
               <div className="w-full lg:w-1/3 px-4 mb-20 lg:mb-0">
                 {" "}
-                <span className="text-lg lg:text-2xl font-bold text-white">
+                <span className="tiller-regular text-lg lg:text-2xl font-bold text-white">
                   Welcome to Harvey's
                 </span>{" "}
-                <h2 className="mt-8 mb-12 lg:mb-16 text-6xl text-white font-bold font-heading md:text-7xl">
+                <h2 className="tiller-bold mt-8 mb-12 lg:mb-16 text-6xl text-white font-bold font-heading md:text-7xl">
                   A family of agriculture-focused comapnies
                 </h2>
                 {/* eslint-disable-next-line */}

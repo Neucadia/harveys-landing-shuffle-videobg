@@ -184,10 +184,10 @@ export default function IndexSectionFeatures2() {
           </div>
           <div className="flex flex-wrap -m-4">
             <div className="w-full lg:w-1/3 p-4">
-              <p className="tracking-tight mb-4">
+              <p className="tiller-italic tracking-tight mb-4">
                 Serving Mid-Michigan’s farming and feed needs for over 79 years
               </p>
-              <h1 className="tracking-tight font-heading text-4xl md:text-6xl font-medium">
+              <h1 className="tiller-medium tracking-tight font-heading text-4xl md:text-6xl font-medium">
                 Our story
               </h1>
             </div>
@@ -216,14 +216,14 @@ export default function IndexSectionFeatures2() {
             </div>
           </div>
         </section>
-        <section className="overflow-x-scroll relative px-8 md:px-24 bg-white">
+        <section className="overflow-x-scroll overflow-y-hidden relative px-8 md:px-24 bg-white">
           <div className="flex flex-wrap -m-4">
             <div className="w-full lg:w-1/3 p-4">
               <div className="flex flex-col justify-end items-start h-full py-12">
-                <h1 className="tracking-tight font-heading font-semibold text-4xl mb-4">
+                <h1 className="tiller-demi tracking-tight font-heading font-semibold text-4xl mb-4">
                   Our history
                 </h1>
-                <p className="tracking-tight text-gray-700 mb-6 max-w-md">
+                <p className="tiller-regular tracking-tight text-gray-700 mb-6 max-w-md">
                   Community-inspired, family-owned, family-run small business.
                 </p>
                 {/* eslint-disable-next-line */}
@@ -259,7 +259,9 @@ export default function IndexSectionFeatures2() {
                     <div className="w-128 border-l border-r border-gray-200 p-12">
                       <div className="flex flex-col justify-between h-full">
                         <div className="flex items-center justify-between">
-                          <p className="tracking-tight font-semibold">1900s</p>
+                          <p className="tiller-demi tracking-tight font-semibold">
+                            1900s
+                          </p>
                           {/* eslint-disable-next-line */}
                           <a
                             href="#"
@@ -289,7 +291,7 @@ export default function IndexSectionFeatures2() {
                             src="zospace-assets/images/picture8.png"
                             alt="Lyons and Daniels Mill"
                           />
-                          <h2 className="font-heading tracking-tight text-2xl font-semibold mb-4">
+                          <h2 className="tiller-medium font-heading tracking-tight text-2xl font-semibold mb-4">
                             1900s: Lyons and Daniels purchase mill
                           </h2>
                           <p className="tracking-tight text-gray-700">
@@ -301,7 +303,9 @@ export default function IndexSectionFeatures2() {
                     </div>
                     <div className="w-128 border-r border-gray-200 p-12 bg-gray-50">
                       <div className="flex flex-col justify-between h-full">
-                        <p className="tracking-tight font-semibold">1945</p>
+                        <p className="tiller-demi tracking-tight font-semibold">
+                          1945
+                        </p>
                         <div>
                           <img
                             className="rounded-xl object-cover mx-auto mb-11"
@@ -309,7 +313,7 @@ export default function IndexSectionFeatures2() {
                             src="zospace-assets/images/picture2.png"
                             alt="Waldron Mill"
                           />
-                          <h2 className="font-heading tracking-tight text-2xl font-semibold mb-4">
+                          <h2 className="tiller-medium font-heading tracking-tight text-2xl font-semibold mb-4">
                             1945: Harvey and Gladys Waldron buy mill
                           </h2>
                           <p className="tracking-tight text-gray-700">
@@ -322,7 +326,9 @@ export default function IndexSectionFeatures2() {
                     </div>
                     <div className="w-128 border-r border-gray-200 p-12 bg-gray-50">
                       <div className="flex flex-col justify-between h-full">
-                        <p className="tracking-tight font-semibold">1950</p>
+                        <p className="tiller-demi tracking-tight font-semibold">
+                          1950
+                        </p>
                         <div>
                           <img
                             className="rounded-xl object-cover mx-auto mb-11"
@@ -330,7 +336,7 @@ export default function IndexSectionFeatures2() {
                             src="zospace-assets/images/picture3.png"
                             alt="The Haradine Mill"
                           />
-                          <h2 className="font-heading tracking-tight text-2xl font-semibold mb-4">
+                          <h2 className="tiller-medium font-heading tracking-tight text-2xl font-semibold mb-4">
                             1950: The Haradine Family become owners
                           </h2>
                           <p className="tracking-tight text-gray-700">
@@ -352,10 +358,10 @@ export default function IndexSectionFeatures2() {
         <section className="relative bg-white py-24 px-8 md:px-24">
           <div className="flex flex-wrap -m-4">
             <div className="w-full lg:w-1/2 p-4">
-              <p className="mb-4 tracking-tight font-bold">2000s</p>
-              <h1 className="text-4xl md:text-6xl font-medium tracking-tight mb-16 max-w-xs md:max-w-lg">
-                Harvey's Exceptional Team enters the 21st Century
-              </h1>
+              <p className="tiller-bold mb-4 tracking-tight font-bold">2000s</p>
+              <h3 className="tiller-medium text-4xl md:text-6xl font-medium tracking-tight mb-16 max-w-xs md:max-w-lg">
+                Harvey's exceptional Team enters the 21st Century
+              </h3>
               <img
                 className="rounded-2xl lg:ml-auto object-cover"
                 style={{ height: 419 }}
