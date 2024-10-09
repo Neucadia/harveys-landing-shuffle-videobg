@@ -46,3 +46,7 @@ video::-webkit-media-controls {
     var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
     var(--tw-sepia) var(--tw-drop-shadow);
 }
+
+.rounded-xl {
+  border-radius: 2.5rem;
+}

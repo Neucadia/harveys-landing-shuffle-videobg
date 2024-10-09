@@ -963,6 +963,10 @@ video {
   overflow-y: hidden;
 }
 
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -1101,6 +1105,10 @@ video {
   object-fit: cover;
 }
 
+.object-left {
+  object-position: left;
+}
+
 .p-12 {
   padding: 3rem;
 }
@@ -1150,6 +1158,11 @@ video {
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .py-3 {
@@ -1409,6 +1422,10 @@ video::-webkit-media-controls {
     var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.rounded-xl {
+  border-radius: 2.5rem;
+}
+
 .hover\:border-gray-100:hover {
   --tw-border-opacity: 1;
   border-color: rgb(211 211 212 / var(--tw-border-opacity));
@@ -1462,6 +1479,10 @@ video::-webkit-media-controls {
 
   .md\:w-1\/2 {
     width: 50%;
+  }
+
+  .md\:max-w-lg {
+    max-width: 32rem;
   }
 
   .md\:px-24 {

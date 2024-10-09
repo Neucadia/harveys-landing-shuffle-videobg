@@ -169,16 +169,16 @@ export default function IndexSectionFeatures2() {
               <img
                 className="rounded-2xl object-cover w-full"
                 style={{ height: 335 }}
-                src="consulty-assets/about/picture11.png"
-                alt
+                src="zospace-assets/images/picture11.png"
+                alt="Bridget and Kerry"
               />
             </div>
             <div className="w-full lg:w-2/3 p-4">
               <img
                 className="rounded-2xl object-cover w-full"
                 style={{ height: 422 }}
-                src="consulty-assets/about/picture12.png"
-                alt
+                src="zospace-assets/images/picture12.png"
+                alt="Bridget and Harvey"
               />
             </div>
           </div>
@@ -216,7 +216,7 @@ export default function IndexSectionFeatures2() {
             </div>
           </div>
         </section>
-        <section className="relative px-8 md:px-24 bg-white">
+        <section className="overflow-x-scroll relative px-8 md:px-24 bg-white">
           <div className="flex flex-wrap -m-4">
             <div className="w-full lg:w-1/3 p-4">
               <div className="flex flex-col justify-end items-start h-full py-12">
@@ -226,6 +226,7 @@ export default function IndexSectionFeatures2() {
                 <p className="tracking-tight text-gray-700 mb-6 max-w-md">
                   Community-inspired, family-owned, family-run small business.
                 </p>
+                {/* eslint-disable-next-line */}
                 <a
                   href="#"
                   className="bg-black h-14 rounded-full px-5 py-3 inline-flex items-center justify-center gap-2 tracking-tight hover:bg-orange-600 focus:bg-orange-500 focus:ring-4 focus:ring-orange-200 transition duration-200"
@@ -259,6 +260,7 @@ export default function IndexSectionFeatures2() {
                       <div className="flex flex-col justify-between h-full">
                         <div className="flex items-center justify-between">
                           <p className="tracking-tight font-semibold">1900s</p>
+                          {/* eslint-disable-next-line */}
                           <a
                             href="#"
                             className="text-gray-900 hover:text-gray-800 transition duration-200"
@@ -282,10 +284,10 @@ export default function IndexSectionFeatures2() {
                         </div>
                         <div>
                           <img
-                            className="object-cover mx-auto mb-11"
+                            className="rounded-xl object-cover mx-auto mb-11"
                             style={{ height: 320 }}
-                            src="consulty-assets/services/picture8.png"
-                            alt
+                            src="zospace-assets/images/picture8.png"
+                            alt="Lyons and Daniels Mill"
                           />
                           <h2 className="font-heading tracking-tight text-2xl font-semibold mb-4">
                             1900s: Lyons and Daniels purchase mill
@@ -301,6 +303,12 @@ export default function IndexSectionFeatures2() {
                       <div className="flex flex-col justify-between h-full">
                         <p className="tracking-tight font-semibold">1945</p>
                         <div>
+                          <img
+                            className="rounded-xl object-cover mx-auto mb-11"
+                            style={{ height: 320 }}
+                            src="zospace-assets/images/picture2.png"
+                            alt="Waldron Mill"
+                          />
                           <h2 className="font-heading tracking-tight text-2xl font-semibold mb-4">
                             1945: Harvey and Gladys Waldron buy mill
                           </h2>
@@ -316,6 +324,12 @@ export default function IndexSectionFeatures2() {
                       <div className="flex flex-col justify-between h-full">
                         <p className="tracking-tight font-semibold">1950</p>
                         <div>
+                          <img
+                            className="rounded-xl object-cover mx-auto mb-11"
+                            style={{ height: 320 }}
+                            src="zospace-assets/images/picture3.png"
+                            alt="The Haradine Mill"
+                          />
                           <h2 className="font-heading tracking-tight text-2xl font-semibold mb-4">
                             1950: The Haradine Family become owners
                           </h2>
@@ -332,6 +346,36 @@ export default function IndexSectionFeatures2() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+        <section className="relative bg-white py-24 px-8 md:px-24">
+          <div className="flex flex-wrap -m-4">
+            <div className="w-full lg:w-1/2 p-4">
+              <p className="mb-4 tracking-tight font-bold">2000s</p>
+              <h1 className="text-4xl md:text-6xl font-medium tracking-tight mb-16 max-w-xs md:max-w-lg">
+                Harvey's Exceptional Team enters the 21st Century
+              </h1>
+              <img
+                className="rounded-2xl lg:ml-auto object-cover"
+                style={{ height: 419 }}
+                src="https://static.shuffle.dev/uploads/files/70/705770af5df1978202fa665db13807b68dda6f51/F7A7998.jpg"
+                alt
+              />
+            </div>
+            <div className="w-full lg:w-1/2 p-4">
+              <img
+                className="rounded-2xl mb-20 object-cover object-left"
+                style={{ height: 516 }}
+                src="https://static.shuffle.dev/uploads/files/70/705770af5df1978202fa665db13807b68dda6f51/5.jpg"
+                alt
+              />
+              <p className="tracking-tight text-lg max-w-lg">
+                Those traveling M-57 the past few decades might not have noticed
+                much change, but the Mill stands as a firm testament to Harvey's
+                proud tradition of reinvention, resilience, and reverence for
+                the community.
+              </p>
             </div>
           </div>
         </section>
