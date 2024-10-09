@@ -262,27 +262,6 @@ export default function IndexSectionFeatures2() {
                           <p className="tiller-demi tracking-tight font-semibold">
                             1900s
                           </p>
-                          {/* eslint-disable-next-line */}
-                          <a
-                            href="#"
-                            className="text-gray-900 hover:text-gray-800 transition duration-200"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width={16}
-                              height={16}
-                              viewBox="0 0 16 16"
-                              fill="none"
-                            >
-                              <path
-                                d="M14 6.66699H7.33333C4.38781 6.66699 2 9.05481 2 12.0003V13.3337M14 6.66699L10 10.667M14 6.66699L10 2.66699"
-                                stroke="currentColor"
-                                strokeWidth="1.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              />
-                            </svg>
-                          </a>
                         </div>
                         <div>
                           <img
