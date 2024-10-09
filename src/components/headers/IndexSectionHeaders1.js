@@ -239,7 +239,7 @@ export default function IndexSectionHeaders1() {
   const linkTransformer = (menuItem) => {
     return (
       <a
-        className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl"
+        className="block pl-8 py-4 text-xl text-gray-800 hover:bg-green-50 rounded-xl"
         href={menuItem.url}
       >
         {menuItem.title}
