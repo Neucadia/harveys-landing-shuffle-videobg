@@ -360,7 +360,7 @@ export default function IndexSectionFeatures2() {
                 className="rounded-2xl lg:ml-auto object-cover"
                 style={{ height: 419 }}
                 src="https://static.shuffle.dev/uploads/files/70/705770af5df1978202fa665db13807b68dda6f51/F7A7998.jpg"
-                alt
+                alt="Tyler"
               />
             </div>
             <div className="w-full lg:w-1/2 p-4">
@@ -368,7 +368,7 @@ export default function IndexSectionFeatures2() {
                 className="rounded-2xl mb-20 object-cover object-left"
                 style={{ height: 516 }}
                 src="https://static.shuffle.dev/uploads/files/70/705770af5df1978202fa665db13807b68dda6f51/5.jpg"
-                alt
+                alt="The Mill"
               />
               <p className="tracking-tight text-lg max-w-lg">
                 Those traveling M-57 the past few decades might not have noticed
